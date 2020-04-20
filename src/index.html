@@ -4,15 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Front End Web 100</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+    <header class="container-fluid jumbotron">
+        <h1>First Application</h1>
+        <p class="subheading">Some Cool Stuff</p>
     </header>
-    <main>
-        
+    <main class="container">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input class="form-control"
+                   id="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input class="form-control"
+                   id="lastName">
+        </div>
+        <button id="formatIt"
+                class="btn btn-primary">Format Name</button>
+        <div class="alert alert-info">
+            <h3 id="formatted">Your Formatted Name Will Go Here</h3>
+        </div>
     </main>
 </body>
 
